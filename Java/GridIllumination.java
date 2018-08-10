@@ -72,8 +72,7 @@ public class LampIlluminationGrid {
     }
 
     public static void main(String[] args) {
-        Lamp[] lamps = {new Lamp(2, 1)};
-//                , new Lamp(2, 2)};
+        Lamp[] lamps = {new Lamp(2, 1), new Lamp(2, 2)};
         int N = 5;
         LampIlluminationGrid lampIlluminationGrid = new LampIlluminationGrid(N, lamps);
 
@@ -81,6 +80,6 @@ public class LampIlluminationGrid {
             System.out.println(Arrays.toString(lampIlluminationGrid.grid[row]));
         }
         Lamp target = new Lamp(0,1);
-        System.out.println("targetPoint: "+lampIlluminationGrid.isGridPointIlluminated(target));
+        System.out.println("targetPoint: " + lampIlluminationGrid.isGridPointIlluminated(target));
     }
 }

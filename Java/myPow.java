@@ -21,7 +21,7 @@ public class myPow {
         }
     }
     public static void main(String[] args){
-        int number = 2;
+        int number = 25;
         int exponent = 4;
 
         System.out.println(number + " to the power of " + exponent + " = " + myPow(number, exponent));
